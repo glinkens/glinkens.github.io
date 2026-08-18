@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gavin | Portfolio & Interests</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      color: var(--accent);
+      font-size: 1.15rem;
+      margin-top: 6px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      color: #ffffff;
+      margin-bottom: 14px;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .tag-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .tag {
+      background: #0f172a;
+      border: 1px solid var(--border);
+      color: var(--accent);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    li {
+      color: var(--text-muted);
+      padding: 6px 0;
+      border-bottom: 1px solid #33415555;
+    }
+
+    li:last-child {
+      border-bottom: none;
+    }
+
+    li strong {
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Gavin</h1>
+      <p>Product Management & Tech Operations</p>
+    </header>
+
+    <div class="card">
+      <h2>About</h2>
+      <p>
+        Product and operations specialist based in Cranford, New Jersey. Focused on building reliable systems, solving complex technical operational challenges, and creating seamless user workflows.
+      </p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Focus Areas</h2>
+        <ul>
+          <li><strong>Discipline:</strong> Product Management & Support Operations</li>
+          <li><strong>Current Base:</strong> Cranford, NJ</li>
+          <li><strong>Ecosystem:</strong> Cloud Platforms, IT Architecture</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Interests & Pursuits</h2>
+        <div class="tag-group">
+          <span class="tag">Golf</span>
+          <span class="tag">Coffee Profiling</span>
+          <span class="tag">Vinyl Audio</span>
+          <span class="tag">Overlanding & Camping</span>
+          <span class="tag">Tabletop RPGs</span>
+          <span class="tag">Pop Art</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Current Projects & Hobbies</h2>
+      <ul>
+        <li><strong>Coffee Extraction:</strong> Fine-tuning single-origin light roasts and precision temperature profiles.</li>
+        <li><strong>Audio Setup:</strong> Analog vinyl listening with active sub routing.</li>
+        <li><strong>Outdoor Rig:</strong> Building out utility-focused camping configurations for long road trips.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
